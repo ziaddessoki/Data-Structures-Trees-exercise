@@ -13,9 +13,10 @@ class BinarySearchTree {
   
   insert(value){
     const newNode = new Node(value)
-    if(!root){
+    if(this.root=== null){
       this.root = newNode
-      }else{
+      }
+      else{
         if(newNode.value>this.value){
           this.right = newNode
         }else{
@@ -33,11 +34,11 @@ class BinarySearchTree {
 const tree = new BinarySearchTree();
 tree.insert(9)
 tree.insert(4)
-tree.insert(6)
-tree.insert(20)
-tree.insert(170)
-tree.insert(15)
-tree.insert(1)
+// tree.insert(6)
+// tree.insert(20)
+// tree.insert(170)
+// tree.insert(15)
+// tree.insert(1)
 JSON.stringify(traverse(tree.root))
 
 //     9
