@@ -11,6 +11,16 @@ class BinarySearchTree {
     this.root = null;
   }
   insert(value){
+    const newNode = new Node(value)
+    if(!root){
+      this.root = newNode
+      }else{
+        if(newNode.value>this.value){
+          this.right = newNode
+        }else{
+          this.right = newNode
+        }
+      }
     //Code here
   }
   lookup(value){
