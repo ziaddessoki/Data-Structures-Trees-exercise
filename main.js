@@ -39,17 +39,17 @@ class BinarySearchTree {
   lookup(value){
     if(!this.root){return false}
     let currentNode = this.root;
-    while(true){
-      if(value<currentNode.value){
+    while(currentNode){
+      if(value < currentNode.value){
         currentNode = currentNode.left
-      }else if(value>currentNode.value){
+      }else if(value > currentNode.value){
         currentNode= currentNode.right
       }else if(value === currentNode.value){
         return currentNode
       }
   
     }
-    return false
+    return false;
     //Code here
   }
   // remove
@@ -64,7 +64,7 @@ tree.insert(170)
 tree.insert(15)
 tree.insert(1)
 tree.lookup(20)
-tree.lookup(9)
+tree.lookup(3)
 // JSON.stringify(traverse(tree.root))
 
 //     9
