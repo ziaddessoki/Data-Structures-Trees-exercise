@@ -64,6 +64,7 @@ tree.insert(170)
 tree.insert(15)
 tree.insert(1)
 tree.lookup(20)
+tree.lookup(9)
 // JSON.stringify(traverse(tree.root))
 
 //     9
