@@ -47,8 +47,9 @@ class BinarySearchTree {
       }else if(value === currentNode.value){
         return currentNode
       }
-  return false
+  
     }
+    return false
     //Code here
   }
   // remove
@@ -62,7 +63,8 @@ tree.insert(20)
 tree.insert(170)
 tree.insert(15)
 tree.insert(1)
-JSON.stringify(traverse(tree.root))
+tree.lookup(20)
+// JSON.stringify(traverse(tree.root))
 
 //     9
 //  4     20
